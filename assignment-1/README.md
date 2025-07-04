@@ -47,25 +47,6 @@ https://nexium-lubaba-khalid-ddfp.vercel.app/
 
 ---
 
-## 📁 Folder Structure
-
-assignment-1/
-├── public/
-│ ├── love.jpeg
-│ └── family.jpg
-├── src/
-│ ├── app/
-│ │ └── page.tsx # Main UI
-│ ├── data/
-│ │ └── quotes.ts # Quote list (local)
-├── components/
-│ └── ui/ # ShadCN components
-├── tailwind.config.ts
-├── package.json
-└── README.md
-
-
----
 
 ## 🚀 Getting Started (How Anyone Can Use It)
 

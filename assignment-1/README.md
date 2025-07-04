@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎉 Quote Generator Web App
 
-## Getting Started
+A modern, responsive Quote Generator built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **ShadCN UI**.  
+Users can type **any keyword or topic**, get **up to 3 matching quotes**, and see the background change based on the topic — using **colors or images**.
 
-First, run the development server:
+---
+
+## 🔥 Live Demo
+https://nexium-lubaba-khalid-ddfp.vercel.app/
+
+---
+
+## 💡 Features
+
+- ✅ Search quotes by **any word** (not just topics)
+- ✅ Returns up to **3 relevant quotes**
+- ✅ Background changes based on topic:
+  - 🌈 Color backgrounds (e.g. `wife`, `sad`, `success`)
+  - 🖼️ Image backgrounds (e.g. `love.jpeg`, `family.jpg`)
+- ✅ Smooth transitions (animated background switch)
+- ✅ 🔍 Autocomplete dropdown for suggestions
+- ✅ ShadCN UI components for clean design
+- ✅ Fully responsive and accessible
+
+---
+
+## 🧩 Tech Stack
+
+| Tool        | Purpose                         |
+|-------------|----------------------------------|
+| **Next.js** | React framework (App Router)     |
+| **TypeScript** | Type safety                   |
+| **Tailwind CSS** | Styling framework            |
+| **ShadCN UI** | Input and Button components    |
+| **Vercel**  | Deployment platform              |
+
+---
+
+## 🧠 How It Works
+
+- Quotes are stored in `quotes.ts` (`local array`)
+- User types any text → it searches inside `quote.text` and `quote.topic`
+- If a match is found:
+  - Displays up to 3 quotes
+  - Changes background based on topic (color or image)
+- Background mapping is done via a dictionary (`backgroundMap`)
+
+---
+
+## 📁 Folder Structure
+
+assignment-1/
+├── public/
+│ ├── love.jpeg
+│ └── family.jpg
+├── src/
+│ ├── app/
+│ │ └── page.tsx # Main UI
+│ ├── data/
+│ │ └── quotes.ts # Quote list (local)
+├── components/
+│ └── ui/ # ShadCN components
+├── tailwind.config.ts
+├── package.json
+└── README.md
+
+
+---
+
+## 🚀 Getting Started (How Anyone Can Use It)
+
+### 1. Clone the Repository
 
 ```bash
+git clone https://github.com/your-username/assignment-1.git
+cd assignment-1
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

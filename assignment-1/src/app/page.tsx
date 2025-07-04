@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { quotes } from "@/data/quotes";
+import { quotes } from "../data/quotes";
 
 export default function QuotePage() {
   const [topic, setTopic] = useState('');

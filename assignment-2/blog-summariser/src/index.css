@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom animation for summary fade-in */
+/* Optional: your custom animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -13,7 +13,6 @@
     transform: translateY(0);
   }
 }
-
 .animate-fade-in {
   animation: fade-in 0.6s ease-out;
 }

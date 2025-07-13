@@ -62,10 +62,10 @@ function App() {
       {/* Input & Output Section */}
       <motion.div
         className="input-section"
-        initial={{ opacity: 0, y: 60 }}
+        initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 0.2, ease: "easeInOut" }}
       >
         <motion.textarea
           placeholder="Paste blog text here..."

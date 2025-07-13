@@ -20,10 +20,11 @@ app.post("/summarize", async (req, res) => {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "mistralai/mistral-7b-instruct", // ✅ This one works
+        model: "mistralai/mistral-7b-instruct",
         messages: [
           { role: "system", content: "You are a helpful assistant that summarizes blog content." },
-          { role: "user", content: `Summarize this blog:\n\n${text}` },
+          { role: "user", content: `Summarize this blog in 3 to 4 concise sentences, focusing only on key ideas:` + text },
+
         ],
         max_tokens: 150,
         temperature: 0.7,

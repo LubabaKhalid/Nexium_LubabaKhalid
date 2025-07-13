@@ -33,7 +33,7 @@ app.post("/summarize", async (req, res) => {
         headers: {
           Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
           "Content-Type": "application/json",
-          "HTTP-Referer": "http://localhost:3000",
+          "HTTP-Referer": "https://zippy-kitten-610a98.netlify.app",
           "X-Title": "Blog Summarizer",
         },
       }

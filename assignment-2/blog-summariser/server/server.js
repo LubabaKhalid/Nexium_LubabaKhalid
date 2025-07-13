@@ -1,40 +1,39 @@
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
-require("dotenv").config(); // Load .env
+require("dotenv").config();
 
 const app = express();
 const PORT = 5000;
 
-// ✅ Middleware
 app.use(cors());
 app.use(express.json());
 
-// ✅ Optional: Health check route
 app.get("/", (req, res) => {
-  res.send("🟢 Blog Summarizer backend is running!");
+  res.send("🟢 Blog Summarizer backend (OpenRouter) is running!");
 });
 
-// ✅ Main summarize route
 app.post("/summarize", async (req, res) => {
   const { text } = req.body;
 
   try {
     const response = await axios.post(
-      "https://api.openai.com/v1/chat/completions",
+      "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "gpt-3.5-turbo",
+        model: "mistralai/mistral-7b-instruct", // ✅ This one works
         messages: [
-          { role: "system", content: "You are a helpful summarizer." },
+          { role: "system", content: "You are a helpful assistant that summarizes blog content." },
           { role: "user", content: `Summarize this blog:\n\n${text}` },
         ],
-        max_tokens: 100,
+        max_tokens: 150,
         temperature: 0.7,
       },
       {
         headers: {
-          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+          Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
           "Content-Type": "application/json",
+          "HTTP-Referer": "http://localhost:3000",
+          "X-Title": "Blog Summarizer",
         },
       }
     );
@@ -43,12 +42,11 @@ app.post("/summarize", async (req, res) => {
     res.json({ summary });
   } catch (error) {
     console.error("❌ Backend error:", error.response?.data || error.message);
-    res.status(500).json({ error: "Failed to summarize" });
+    res.status(500).json({ error: "Summarization failed" });
   }
 });
 
-// ✅ Start the server
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
-  console.log("🔐 API Key Loaded:", process.env.OPENAI_API_KEY ? "Yes ✅" : "No ❌");
+  console.log("🔐 API Key Loaded:", process.env.OPENROUTER_API_KEY ? "Yes ✅" : "No ❌");
 });

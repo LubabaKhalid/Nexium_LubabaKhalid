@@ -15,7 +15,7 @@ function App() {
     setSummary("");
 
     try {
-      const res = await axios.post("https://nexium-lubabakhalid.onrender.com/summarize", { text });
+      const res = await axios.post("https://nexiumlubabakhalid.onrender.com//summarize", { text });
       setSummary(res.data.summary);
     } catch (err) {
       setSummary("⚠️ Failed to summarize. Please try again.");

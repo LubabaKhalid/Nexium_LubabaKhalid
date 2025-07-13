@@ -34,7 +34,7 @@ A full-stack web application that uses artificial intelligence to summarize blog
 
 ### 1. Clone the Repo
 
-```bash
+
 git clone https://github.com/yourusername/blog-summariser.git
 cd assignment-2/blog-summariser
 

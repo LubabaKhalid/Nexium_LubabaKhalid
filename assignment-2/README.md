@@ -6,6 +6,7 @@ A full-stack web application that uses artificial intelligence to summarize blog
 
 - **Frontend:** [https://legendary-mochi-7c18f3.netlify.app](https://legendary-mochi-7c18f3.netlify.app)
 - **Backend API:** [https://nexium-lubabakhalid.onrender.com](https://nexium-lubabakhalid.onrender.com)
+
 ---
 
 ## 🚀 Features
@@ -34,7 +35,7 @@ A full-stack web application that uses artificial intelligence to summarize blog
 
 ### 1. Clone the Repo
 
-
+```bash
 git clone https://github.com/yourusername/blog-summariser.git
 cd assignment-2/blog-summariser
 
@@ -47,6 +48,7 @@ touch .env
 cd ../client
 npm install
 npm start
+```
 
 👤 Author
 ### Lubaba Khalid

@@ -6,13 +6,6 @@ A full-stack web application that uses artificial intelligence to summarize blog
 
 - **Frontend:** [https://legendary-mochi-7c18f3.netlify.app](https://legendary-mochi-7c18f3.netlify.app)
 - **Backend API:** [https://nexium-lubabakhalid.onrender.com](https://nexium-lubabakhalid.onrender.com)
-
----
-
-## 📸 Preview
-
-![screenshot](preview.png) <!-- Add a screenshot in your repo -->
-
 ---
 
 ## 🚀 Features
@@ -37,17 +30,6 @@ A full-stack web application that uses artificial intelligence to summarize blog
 
 ---
 
-## 📁 Project Structure
-
-📦 blog-summariser/
-├── assignment-2/
-│ └── blog-summariser/
-│ ├── client/ # React frontend
-│ └── server/ # Express backend
-
-
----
-
 ## 🛠️ Local Setup
 
 ### 1. Clone the Repo
@@ -67,4 +49,4 @@ npm install
 npm start
 
 👤 Author
-Lubaba Khalid
+### Lubaba Khalid

@@ -4,8 +4,8 @@ A full-stack web application that uses artificial intelligence to summarize blog
 
 ## 🌐 Live Demo
 
-- **Frontend:** [https://legendary-mochi-7c18f3.netlify.app](https://legendary-mochi-7c18f3.netlify.app)
-- **Backend API:** [https://nexium-lubabakhalid.onrender.com](https://nexium-lubabakhalid.onrender.com)
+- **Frontend:** [https://cute-pastelito-ff4874.netlify.app/](https://cute-pastelito-ff4874.netlify.app/)
+- **Backend API:** [https://nexium-lubabakhalid-1.onrender.com/](https://nexium-lubabakhalid-1.onrender.com/)
 
 ---
 

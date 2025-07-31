@@ -19,28 +19,31 @@ A smart tool that tailors your resume to match specific job descriptions using A
 - Upload resume, paste job description, get tailored output
 - Responsive, user-friendly UI
 
-## 🚀 Deployment
-- Live Demo: [https://your-vercel-link.vercel.app]()
-- CI/CD via Vercel
-
-## 📹 Loom Walkthrough
-- Watch here: [Loom Video]
-
 
 ## 🙌 Author
 Built by [Your Name] as part of AI-Powered App Project, July 2025.
 
 # installments:
 npm install @supabase/supabase-js
+
 npm install -g n8n
+
 n8n
+
 cd /grand-project/app
+
 npm install
+
 npx create-next-app@latest . --typescript
+
 npm install axios
+
 npx create-next-app@latest . --use-npm
 
 npm run dev
+
 npm install @supabase/supabase-js
+
 npm install react-hook-form
+ 
 npm install axios

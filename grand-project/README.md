@@ -33,3 +33,14 @@ Built by [Your Name] as part of AI-Powered App Project, July 2025.
 # installments:
 npm install @supabase/supabase-js
 npm install -g n8n
+n8n
+cd /grand-project/app
+npm install
+npx create-next-app@latest . --typescript
+npm install axios
+npx create-next-app@latest . --use-npm
+
+npm run dev
+npm install @supabase/supabase-js
+npm install react-hook-form
+npm install axios

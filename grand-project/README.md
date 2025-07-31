@@ -32,3 +32,4 @@ Built by [Your Name] as part of AI-Powered App Project, July 2025.
 
 # installments:
 npm install @supabase/supabase-js
+npm install -g n8n
